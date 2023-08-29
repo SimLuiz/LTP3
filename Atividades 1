@@ -1,0 +1,132 @@
+Atividades de C#
+using System;
+ using System.Text;
+
+ namespace atividade
+{
+    class exercicio
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine ("Coloque o ano que você nasceu: ");
+            int anoNascimento = Convert.ToInt32(Console.ReadLine());
+            int anoAtual = 2023;
+            int idade = (anoAtual-anoNascimento);
+            Console.WriteLine ("Sua idade Atual é: " + idade);
+        }
+    }
+}
+
+
+------------------------------------------------------------------------
+
+using System;
+ using System.Text;
+
+ namespace atividade{
+    class exercicio01
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine ("Coloque seu nome: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Coloque seu sobrenome: ");
+            string sobreNome = Console.ReadLine();
+            Console.WriteLine ("Seu nome completo é: " + nome + " "+ sobreNome);
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------
+
+
+Atividade 03-
+//Atividade 3 - 01
+using System;
+ namespace atividade
+ {
+    class atividade03
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Coloque um número:");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Seu numero é:" + numero);
+        }
+    }
+ }
+
+---------------------------------------------------------------------------------------------
+
+//Atividade 03 - questão 04
+ using System;
+ namespace atividade03
+ {
+    class atividade
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Digite um Numero:");
+            int numeroUser = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Tabuada do número: " + numeroUser);
+            for (int i = 1; i <= 10; i++)
+            {
+                int resultado = numeroUser * i;
+                Console.WriteLine(numeroUser + "*" + i + "=" + resultado);
+            }
+        }
+    }
+ }
+
+
+---------------------------------------------------------------------------------------------------
+
+ //Atividade 03 - Questão 05
+ using System;
+ namespace atividade02
+ {
+    class atividade03_2
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Digite um número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            if (numero % 2 == 0)
+            {
+                Console.WriteLine("O numero "+ numero + " é par ");
+            }
+            else
+            {
+                Console.WriteLine("O número "+ numero + " é impar");
+            }
+        }
+    }
+ }
+
+----------------------------------------------------------------------------------------------------------------
+
+
+ //Atividade 03 - Questão 06
+ using System;
+ namespace atividade03
+ {
+    class atividade03_3
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o primeiro numero:");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o Segundo numero:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int soma = num1 + num2;
+            if (num1 == num2)
+            {
+                Console.WriteLine("O triplo da soma é: " + soma * 3);
+            }
+            else 
+            {
+                Console.WriteLine("A soma é: "+ soma);
+            }
+        }
+    }
+ }
